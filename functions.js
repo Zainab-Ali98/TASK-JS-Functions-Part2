@@ -7,7 +7,10 @@
  * greet("Hamza") logs "Hello Hamza"
  */
 function greet(name) {
-  // Your code here
+  
+ // Logs the greeting message
+ console.log(`Hello ${name}`);
+
 }
 
 /**
@@ -20,6 +23,7 @@ function greet(name) {
  * isOdd(10) -> false
  */
 function isOdd(n) {
+  return n % 2 !== 0;
   // Your code here
 }
 
@@ -33,21 +37,36 @@ function isOdd(n) {
  * oddsSmallerThan(15) -> 7
  */
 function oddsSmallerThan(n) {
-  // Your code here
+
+  if (n % 2 === 0) 
+    {
+    return n / 2;
+  } else 
+  {
+    return (n - 1) / 2;
+  }
+
 }
 
 /**
  * squareOrDouble(n):
  * - receives a number n
  * - returns its square if it's odd
- * - returns its double if it's even
+ * - returns its double if it's even 
  *
  * e.g.
  * squareOrDouble(16) -> 32
  * squareOrDouble(9) -> 81
  */
 function squareOrDouble(n) {
-  // Your code here
+
+  if (n % 2 === 0) {
+    return n * 2; 
+} else {
+    return n * n;
+}
+
+
 }
 
 module.exports = {
